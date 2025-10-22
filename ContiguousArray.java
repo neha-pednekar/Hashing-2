@@ -7,9 +7,6 @@
 * Problem: Contiguous array
 * */
 
-import java.util.HashMap;
-import java.util.Map;
-
 /*
 * Approach: Using HashMap and Running Sum
 * In this approach, we keep a track of running sum by incrementing the sum by 1 if element is 1 and
@@ -17,6 +14,10 @@ import java.util.Map;
 * we encounter the same sum again, we just take the difference between the current index and the index
 * of the already stored sum which should give us the max length of a contiguous balanced array.
 * */
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class ContiguousArray {
     public int findMaxLength(int[] nums) {
         int rSum = 0;
